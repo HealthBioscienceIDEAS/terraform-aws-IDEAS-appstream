@@ -1,3 +1,8 @@
+variable "vpc_id" {
+  type        = string
+  description = "VPC ID"
+}
+
 variable "desired_instance_num" {
   type        = number
   description = "Desired number of AS2 instances"
