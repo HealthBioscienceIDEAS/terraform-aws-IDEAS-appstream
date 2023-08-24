@@ -1,10 +1,10 @@
-# This is the main entry point for your Terraform code.
+provider "aws" {
+  region = var.region
 
-# Create random identifier for demo purposes.
-resource "random_id" "this" {
-  byte_length = 8
-}
+  default_tags {
+    tags = {
+      Terraform = "true"
+    }
+  }
 
-locals {
-  my_output = "${var.prefix}-${random_id.this.id}"
 }

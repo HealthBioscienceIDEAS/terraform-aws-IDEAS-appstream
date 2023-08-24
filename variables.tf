@@ -1,6 +1,5 @@
-# Put your input variables here
-variable "prefix" {
+variable "region" {
   type        = string
-  description = "A dummy prefix."
-  default     = "my-test"
+  default     = "eu-west-2"
+  description = "The region to deploy into."
 }
