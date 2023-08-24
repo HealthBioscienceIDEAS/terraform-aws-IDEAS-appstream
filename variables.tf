@@ -32,13 +32,13 @@ variable "as2_fleet_name" {
 variable "as2_fleet_description" {
   type        = string
   description = "Fleet description"
-  default     = "IDEAS process fleet"
+  default     = "IDEAS fleet"
 }
 
 variable "as2_fleet_display_name" {
   type        = string
   description = "Fleet diplay name"
-  default     = "IDEAS process fleet"
+  default     = "IDEAS fleet"
 }
 
 variable "as2_image_name" {
@@ -62,11 +62,11 @@ variable "as2_stack_name" {
 variable "as2_stack_description" {
   type        = string
   description = "Stack description"
-  default     = "IDEAS process stack"
+  default     = "IDEAS stack"
 }
 
 variable "as2_stack_display_name" {
   type        = string
   description = "Stack diplay name"
-  default     = "IDEAS process stack"
+  default     = "IDEAS stack"
 }
