@@ -4,6 +4,12 @@ variable "region" {
   description = "The region to deploy into."
 }
 
+variable "solution_name" {
+  type        = string
+  default     = "IDEAS-appstream"
+  description = "Overall name for the solution"
+}
+
 # AppStream vars
 variable "desired_instance_num" {
   type        = number
@@ -14,19 +20,19 @@ variable "desired_instance_num" {
 variable "fleet_name" {
   type        = string
   description = "Fleet name"
-  default     = "IDEAS-batch-fleet"
+  default     = "IDEAS-fleet"
 }
 
 variable "fleet_description" {
   type        = string
   description = "Fleet description"
-  default     = "IDEAS batch process fleet"
+  default     = "IDEAS fleet"
 }
 
 variable "fleet_display_name" {
   type        = string
   description = "Fleet diplay name"
-  default     = "IDEAS batch process fleet"
+  default     = "IDEAS fleet"
 }
 
 variable "fleet_subnet_ids" {
@@ -48,19 +54,19 @@ variable "instance_type" {
 variable "stack_name" {
   type        = string
   description = "Stack name"
-  default     = "IDEAS-batch-stack"
+  default     = "IDEAS-stack"
 }
 
 variable "stack_description" {
   type        = string
   description = "Stack description"
-  default     = "IDEAS batch process stack"
+  default     = "IDEAS stack"
 }
 
 variable "stack_display_name" {
   type        = string
   description = "Stack diplay name"
-  default     = "IDEAS batch process stack"
+  default     = "IDEAS stack"
 }
 
 variable "vpc_id" {
