@@ -44,7 +44,7 @@ variable "as2_fleet_display_name" {
 variable "as2_image_name" {
   type        = string
   description = "AS2 image to deploy"
-  default     = "AppStream-AmazonLinux2-03-15-2023"
+  default     = "IDEAS-FSL-image-2023-08-25"
 }
 
 variable "as2_instance_type" {
