@@ -47,7 +47,7 @@ No modules.
 
 ## Outputs
 
-No outputs.
-
----
+| Name | Description |
+|------|-------------|
+| <a name="output_sg_id"></a> [sg\_id](#output\_sg\_id) | n/a |
 <!-- END_TF_DOCS -->
