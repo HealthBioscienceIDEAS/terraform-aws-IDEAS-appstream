@@ -1,14 +1,3 @@
-provider "aws" {
-  region = var.region
-
-  default_tags {
-    tags = {
-      Terraform = "true"
-    }
-  }
-
-}
-
 module "appstream" {
   source               = "./modules/appstream"
   desired_instance_num = var.as2_desired_instance_num
