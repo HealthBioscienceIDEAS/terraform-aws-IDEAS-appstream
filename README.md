@@ -12,35 +12,38 @@ This module creates an AppStream image for IDEAS.
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.13.1 |
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_appstream"></a> [appstream](#module\_appstream) | ./modules/appstream | n/a |
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | ./modules/vpc | n/a |
+No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_appstream_fleet.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appstream_fleet) | resource |
+| [aws_appstream_fleet_stack_association.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appstream_fleet_stack_association) | resource |
+| [aws_appstream_stack.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appstream_stack) | resource |
+| [aws_security_group.appstream](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_as2_desired_instance_num"></a> [as2\_desired\_instance\_num](#input\_as2\_desired\_instance\_num) | Desired number of AS2 instances | `number` | `1` | no |
-| <a name="input_as2_fleet_description"></a> [as2\_fleet\_description](#input\_as2\_fleet\_description) | Fleet description | `string` | `"IDEAS process fleet"` | no |
-| <a name="input_as2_fleet_display_name"></a> [as2\_fleet\_display\_name](#input\_as2\_fleet\_display\_name) | Fleet diplay name | `string` | `"IDEAS process fleet"` | no |
-| <a name="input_as2_fleet_name"></a> [as2\_fleet\_name](#input\_as2\_fleet\_name) | Fleet name | `string` | `"IDEAS-fleet"` | no |
-| <a name="input_as2_image_name"></a> [as2\_image\_name](#input\_as2\_image\_name) | AS2 image to deploy | `string` | `"AppStream-AmazonLinux2-03-15-2023"` | no |
-| <a name="input_as2_instance_type"></a> [as2\_instance\_type](#input\_as2\_instance\_type) | AS2 instance type | `string` | `"stream.standard.medium"` | no |
-| <a name="input_as2_stack_description"></a> [as2\_stack\_description](#input\_as2\_stack\_description) | Stack description | `string` | `"IDEAS process stack"` | no |
-| <a name="input_as2_stack_display_name"></a> [as2\_stack\_display\_name](#input\_as2\_stack\_display\_name) | Stack diplay name | `string` | `"IDEAS process stack"` | no |
-| <a name="input_as2_stack_name"></a> [as2\_stack\_name](#input\_as2\_stack\_name) | Stack name | `string` | `"IDEAS-stack"` | no |
-| <a name="input_region"></a> [region](#input\_region) | The region to deploy into. | `string` | `"eu-west-2"` | no |
-| <a name="input_solution_name"></a> [solution\_name](#input\_solution\_name) | Overall name for the solution | `string` | `"IDEAS-appstream"` | no |
-| <a name="input_vpc_cidr_block"></a> [vpc\_cidr\_block](#input\_vpc\_cidr\_block) | The CIDR block for the VPC | `string` | `"10.0.0.0/25"` | no |
+| <a name="input_desired_instance_num"></a> [desired\_instance\_num](#input\_desired\_instance\_num) | Desired number of AS2 instances | `number` | `1` | no |
+| <a name="input_fleet_description"></a> [fleet\_description](#input\_fleet\_description) | Fleet description | `string` | `"IDEAS fleet"` | no |
+| <a name="input_fleet_display_name"></a> [fleet\_display\_name](#input\_fleet\_display\_name) | Fleet diplay name | `string` | `"IDEAS fleet"` | no |
+| <a name="input_fleet_name"></a> [fleet\_name](#input\_fleet\_name) | Fleet name | `string` | `"IDEAS-fleet"` | no |
+| <a name="input_fleet_subnet_ids"></a> [fleet\_subnet\_ids](#input\_fleet\_subnet\_ids) | Subnet IDs for fleet | `list(string)` | n/a | yes |
+| <a name="input_image_name"></a> [image\_name](#input\_image\_name) | AS2 image to deploy | `string` | n/a | yes |
+| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | AS2 instance type | `string` | `"stream.standard.medium"` | no |
+| <a name="input_stack_description"></a> [stack\_description](#input\_stack\_description) | Stack description | `string` | `"IDEAS stack"` | no |
+| <a name="input_stack_display_name"></a> [stack\_display\_name](#input\_stack\_display\_name) | Stack diplay name | `string` | `"IDEAS stack"` | no |
+| <a name="input_stack_name"></a> [stack\_name](#input\_stack\_name) | Stack name | `string` | `"IDEAS-stack"` | no |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | VPC ID | `string` | n/a | yes |
 
 ## Outputs
 
