@@ -1,6 +1,6 @@
-# IDEAS AppStream image
+# IDEAS AppStream instance
 
-This module creates an AppStream image for IDEAS.
+This module creates an AppStream instance for IDEAS.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
